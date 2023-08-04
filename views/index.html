@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tabla de platos</title>
+</head>
+
+<body>
+  <body>
+    <h1>Platos de la API</h1>
+
+    <form id="plato-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br>
+        <label for="calorias">Calorías:</label>
+        <input type="number" id="calorias" required><br>
+        <label for="vegetariano">¿Es vegetariano?</label>
+        <input type="checkbox" id="vegetariano"><br>
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" step="0.01" required><br>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" required></textarea><br>
+        <button type="submit">Agregar nuevo plato</button>
+      </form>
+
+
+
+
+      
+    <table id="platos-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Calorias</th>
+                <th>vegetariano</th>
+                <th>Valor</th>
+                <th>Descripcion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se agregarán las filas con los datos de la API -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</body>
+
+</html>
